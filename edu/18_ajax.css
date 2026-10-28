@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+input {
+  border: 1px solid skyblue;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: skyblue;
+}
+
+button {
+  border-style: none;
+  background-color: powderblue;
+  border-radius: 50%;
+  color: blue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(229, 244, 247);
+}
+
+.card-img {
+  border-radius: 10px;
+  background-image: url(../img/dummy-img.png);
+  /* aspect-ratio: 4/3; */
+  padding-top: 80%;
+  /*width가 늘어나면 padding도 같이 늘어난다*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

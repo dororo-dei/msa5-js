@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+    <link rel="stylesheet" href="18_ajax.css" />
+    <script src="18_ajax.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- form 영역 -->
+      <!-- 요즘엔 form 태그에 action 등의 추가 속성을 넣지 않는다 -->
+      <form>
+        <input
+          type="number"
+          name="page"
+          id="page"
+          min="5"
+          max="10"
+          placeholder="페이지"
+          required
+        />
+        <input
+          type="number"
+          name="limit"
+          id="limit"
+          placeholder="출력개수"
+          required
+        />
+
+        <button type="submit">전송</button>
+      </form>
+
+      <!-- card 영역 -->
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img"></div>
+          <p class="card-text">1: AAAA</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <p class="card-text">2: BBBB</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <p class="card-text">3: CCCC</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img"></div>
+          <p class="card-text">4: DDDD</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
