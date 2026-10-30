@@ -46,12 +46,9 @@ nextBtn.addEventListener("click", async (e)=>{
       // 6-4. card-container에 생성한 요소 담기
 
       cardContainer.appendChild(card);
-
-      // 7. 다음 페이지 번호로 증가
-      // page++;
     })
     
-    console.log(page);
+    // console.log(page);
   }catch(error){
     console.error(error);
   }
